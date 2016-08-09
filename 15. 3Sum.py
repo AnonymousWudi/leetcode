@@ -12,7 +12,7 @@ class Solution(object):
         """
         nums.sort()
         result = set()
-        for i in range(len(nums)):
+        for i in range(len(nums)-2):
             if i > 0 and nums[i-1] == nums[i]:
                 continue
             amount = -nums[i]
